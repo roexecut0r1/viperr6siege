@@ -420,8 +420,8 @@
       downloading = false;
       // trigger a fake file download by creating an anchor (replace URL with your real file)
       const a = document.createElement('a');
-      a.href = 'ViperLoader.zip'; // replace with your real file URL
-      a.download = 'ViperLoader.zip';
+      a.href = 'viper-r6.zip'; // replace with your real file URL
+      a.download = 'viper-r6.zip';
       document.body.appendChild(a);
       a.click();
       a.remove();
@@ -430,8 +430,8 @@
     // Secondary download button triggers direct link
     document.getElementById('dlSecondary').addEventListener('click', ()=>{
       const a = document.createElement('a');
-      a.href = 'ViperLoader.zip'; // replace with your real file URL
-      a.download = 'ViperLoader.zip';
+      a.href = 'viper-r6.zip'; // replace with your real file URL
+      a.download = 'viper-r6.zip';
       document.body.appendChild(a);
       a.click();
       a.remove();
@@ -440,7 +440,7 @@
     // Copy link
     document.getElementById('copyLink').addEventListener('click', async ()=>{
       try{
-        await navigator.clipboard.writeText(location.origin + '/ViperLoader.zip');
+        await navigator.clipboard.writeText(location.origin + '/viper-r6.zip');
         progressText.textContent = 'Download link copied';
         setTimeout(()=> progressText.textContent = 'Ready to download', 1800);
       }catch(e){
